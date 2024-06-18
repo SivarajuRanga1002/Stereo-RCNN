@@ -3,8 +3,7 @@
 
 <img src="doc/system.png" width = 90% div align=center />
 
-**26 May 2019**: Pytorch 1.0.0 and Python 3.6 are supported now. Please checkout to [branch 1.0](https://github.com/HKUST-Aerial-Robotics/Stereo-RCNN/tree/1.0)!
-
+**April 2024**: Pytorch 1.0.0 and Python 3.6 are supported now. 
 This project contains the implementation of our CVPR 2019 paper [arxiv](https://arxiv.org/pdf/1902.09738.pdf).
 
 Stereo R-CNN focuses on accurate 3D object detection and estimation using image-only data in autonomous driving scenarios. It features simultaneous object detection and association for stereo images, 3D box estimation using 2D information, accurate dense alignment for 3D box refinement. We also provide a light-weight version based on the monocular 2D detection, which only uses stereo images in the dense alignment module. Please checkout to branch [mono](https://github.com/HKUST-Aerial-Robotics/Stereo-RCNN/tree/mono) for details.
@@ -24,13 +23,13 @@ If you find the project useful for your research, please cite:
 
 ## 0. Install
 
-This implementation is tested under Pytorch 0.3.0. To avoid affecting your Pytorch version, we recommend using conda to enable multiple versions of Pytorch.
+This implementation is tested under Pytorch 1.0.0. To avoid affecting your Pytorch version, we recommend using conda to enable multiple versions of Pytorch.
 
 0.0. Install Pytorch:
 ```
-    conda create -n env_stereo python=2.7
+    conda create -n env_stereo python=3.6
     conda activate env_stereo
-    conda install pytorch=0.3.0 cuda80 -c pytorch
+    conda install pytorch=1.0.0 cuda80 -c pytorch
     conda install torchvision -c pytorch
 ```
 0.1. Other dependencies:
